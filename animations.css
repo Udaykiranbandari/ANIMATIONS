@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.music-container{
+    height:400px;
+    width: 100%;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: end;
+}
+.all{
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(250, 28, 241),rgb(115, 37, 188));
+    width: 50px;
+}
+  
+    .div-1{
+        animation: div-1 0.7s ease infinite;
+        height: 70px;
+    }
+.div-2{
+    animation: div-2 0.5s ease infinite;
+    height: 100px; 
+}
+.div-3{ 
+    animation:  div-3 0.5s ease infinite;
+    height: 200px;
+}
+.div-4{ 
+     height: 150px;
+     animation:  div-4 0.75s ease infinite;
+}
+.div-5{ 
+    height: 100px;
+    animation:  div-5 0.5s ease infinite;
+}
+.div-6{ 
+    height: 80px;
+    animation: div-6 0.6s ease infinite;
+} 
+
+@keyframes div-1 {
+        0% {
+             height: 0px;
+             }
+       
+      }
+      @keyframes div-2 {
+        0% { 
+            height: 70px;
+         }
+      
+      }
+      @keyframes div-3 {
+        25% { 
+            height: 150px; 
+        }
+      
+      }
+      @keyframes div-4 {
+        25% {
+             height: 100px;
+             }
+      
+      }
+      @keyframes div-5 {
+        0% {
+             height: 50px;
+             }
+      
+      }
+      @keyframes div-6 {
+        0% { 
+            height: 0px; 
+        }
+      
+      }
+      @media screen  and (max-width : 500px){
+        .music-container{
+          width: 100%;
+          padding: 20px;
+        }
+        .all{
+          width: 50%;
+        }
+        
+      }
+      .container-2{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+       
+      }
+      .div{
+        height: 30px;
+        width: 30px;
+        border-radius:50% ;
+        animation:wave 1.4s infinite ease;
+
+      }
+      .div-1 {
+        background-color:blue;
+        animation-delay: 0s;
+  
+      }
+      .div-2 {
+        background-color: red;
+        animation-delay: 0.2s;
+       
+      }
+      .div-3 {
+        background-color: yellow;
+        animation-delay: 0.4s; 
+      }
+      .div-4 {
+        background-color: green;
+        animation-delay: 0.6s;
+        
+      }
+      @keyframes wave{
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(4px);
+        }
+        50%{
+            transform: translateY(-8px);
+        }
+        100%{
+            transform: translateY(-10px);
+        }
+      }
