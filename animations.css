@@ -10,6 +10,7 @@
     gap:10px;
     justify-content: center;
     align-items: end;
+    transform: rotate(180deg);
 }
 .all{
     border-radius: 5px;
